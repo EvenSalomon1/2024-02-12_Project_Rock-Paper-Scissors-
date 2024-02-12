@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Rock Paper Scissors</h1>
+        <h4>Choose your weapon</h4>
+        <div>
+          <p class="youchoose"></p>
+          <p class="cpuchoose"></p>
+          <p class="result"></p>
+        </div>
+      </section>
+      <section class="images">
+        <!-- alten onclicks:
+            onclick="stone()"
+            onclick="choose(inputStein)" -->
+        <img
+          onclick="choose('stein')"
+          src="./assets/img/stein.png"
+          alt="stein"
+          id="stein"
+        />
+        <!-- 
+            alten onclicks:
+            onclick="paper() "
+            onclick="choose(inputPapier)" -->
+        <img
+          onclick="choose('papier')"
+          src="./assets/img/papier.png"
+          alt="papier"
+          id="papier"
+        />
+        <!-- 
+              alten onclicks:
+              onclick="scissors()"
+              onclick="choose(inputSchere)" -->
+        <img
+          onclick="choose('schere')"
+          src="./assets/img/schere.png"
+          alt="schere"
+          id="schere"
+        />
+      </section>
+      <a onclick="restart()" href="#">restart game</a>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
